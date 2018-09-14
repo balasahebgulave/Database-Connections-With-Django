@@ -1,0 +1,43 @@
+mongo and django database connection.
+
+pip install djongo
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django',
+        'NAME': 'databasename,
+    }
+
+
+
+postgresql and django database connection.
+
+pip install psycopg2
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': '12345',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+
+
+mysql and django database connection.
+
+pip install django mysqlclient
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'databasename',
+        'USER': 'username',
+        'PASSWORD': '12345',
+        'HOST': 'localhost',
+        'PORT': '3306',
+ 
+    }
+}
