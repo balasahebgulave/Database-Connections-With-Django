@@ -7,7 +7,26 @@ DATABASES = {
         'ENGINE': 'django',
         'NAME': 'databasename,
     }
+    
+    
+    
+    
+mongodb and django connection with ENFORCE_SCHEMA,USER,NAME,HOST,PORT,PASSWORD,AUTH_SOURCE.
 
+DATABASES = {
+        'default': {
+            'ENGINE': 'djongo',
+            'ENFORCE_SCHEMA': True,
+            'USER': 'rntdb-user',
+            'NAME': 'rntdb',
+            'HOST': '54.210.234.120',
+            'PORT': 52018,
+            'PASSWORD': '12345678',
+            'AUTH_SOURCE': 'rntdb',
+        }
+    }  
+ 
+    
 
 
 postgresql and django database connection.
@@ -24,6 +43,8 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
+
 
 
 mysql and django database connection.
