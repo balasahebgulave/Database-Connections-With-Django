@@ -62,3 +62,12 @@ DATABASES = {
  
     }
 }
+
+
+
+
+local connections
+MONGO_DB_PATH = 'mongodb://rntdb-user:12345678@28.213.30.114:52018/rntdb'
+from pymongo import MongoClient
+client = MongoClient(MONGO_DB_PATH)
+db = client['db']
