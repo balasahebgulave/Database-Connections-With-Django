@@ -50,6 +50,7 @@ DATABASES = {
 mysql and django database connection.
 
 pip install django mysqlclient
+pip install Django==2.0.0 -i https://pypi.douban.com/simple
 
 DATABASES = {
     'default': {
