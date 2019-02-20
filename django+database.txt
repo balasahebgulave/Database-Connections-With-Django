@@ -14,6 +14,15 @@ DATABASES = {
 mongodb and django connection with ENFORCE_SCHEMA,USER,NAME,HOST,PORT,PASSWORD,AUTH_SOURCE.
 
 DATABASES = {
+   ‘default’: {
+      ‘ENGINE’: ‘djongo’,
+      ‘NAME’: ‘your-db-name’,
+   }
+}
+
+OR
+
+DATABASES = {
         'default': {
             'ENGINE': 'djongo',
             'ENFORCE_SCHEMA': True,
