@@ -1,4 +1,20 @@
-mongo and django database connection.
+
+# for getting db names from django
+
+from django.db import connection
+db_name = connection.settings_dict['NAME']
+OR
+from django import db
+db.settings.DATABASES['default']['NAME']
+
+
+
+
+# connection with mongo-db
+
+# mongodb and django connection with ENFORCE_SCHEMA,USER,NAME,HOST,PORT,PASSWORD,AUTH_SOURCE.
+
+# mongo and django database connection.
 
 pip install djongo
 
@@ -8,18 +24,6 @@ DATABASES = {
         'NAME': 'databasename,
     }
     
-    
-    
-    
-mongodb and django connection with ENFORCE_SCHEMA,USER,NAME,HOST,PORT,PASSWORD,AUTH_SOURCE.
-
-DATABASES = {
-   ‘default’: {
-      ‘ENGINE’: ‘djongo’,
-      ‘NAME’: ‘your-db-name’,
-   }
-}
-
 OR
 
 DATABASES = {
@@ -38,7 +42,10 @@ DATABASES = {
     
 
 
-postgresql and django database connection.
+
+# connection with postgres database
+
+# postgresql and django database connection.
 
 pip install psycopg2
 
@@ -56,7 +63,7 @@ DATABASES = {
 
 
 
-mysql and django database connection.
+# mysql and django database connection.
 
 pip install django mysqlclient
 pip install Django==2.0.0 -i https://pypi.douban.com/simple
@@ -76,7 +83,8 @@ DATABASES = {
 
 
 
-local connections
+# local connections
+
 MONGO_DB_PATH = 'mongodb://rntdb-user:12345678@28.213.30.114:52018/rntdb'
 from pymongo import MongoClient
 client = MongoClient(MONGO_DB_PATH)
