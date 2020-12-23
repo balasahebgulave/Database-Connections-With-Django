@@ -21,7 +21,7 @@ pip install djongo
 DATABASES = {
     'default': {
         'ENGINE': 'django',
-        'NAME': 'databasename,
+        'NAME': 'databasename',
     }
 }
     
