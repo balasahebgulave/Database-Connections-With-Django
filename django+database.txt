@@ -23,6 +23,7 @@ DATABASES = {
         'ENGINE': 'django',
         'NAME': 'databasename,
     }
+}
     
 OR
 
